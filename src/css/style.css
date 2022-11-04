@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+}
+
+a{
+    text-decoration: none;
+    background-color: #494949;
+    border-radius: 10px;
+    color: #FFF;
+    padding: 2px 15px 7px 15px;
+    margin: 10px;
+    color: #FFF;
+}
+a:hover{
+    color: #FFF;
+}
+
+p{
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    background: rgb(252,222,59);
+    background: linear-gradient(90deg, rgba(252,222,59,1) 43%, rgba(251,143,57,1) 100%);
+    height: auto;
+    min-height: 100vh;
+    padding: 100px;
+}
+@media (max-width: 768px){
+    main{
+        padding: 20px;
+    }
+}
+
+section{
+    padding: 50px 100px;
+    background-color: #cf4f34;
+    border-radius: 10px;
+}
+
+header{
+    /**/
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+input{
+    border-bottom: 1px solid rgb(44, 44, 44);
+    background-color: #FFF!important;
+}
+
+input:focus{
+    background-color: #f8a891;
+}
+
+#contentBusquedasRecientes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#container-elem{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-img{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 768px){
+    .container-img{
+        width: 100%;
+    }
+}
+
+.p-info{
+    font-weight: 600;
+    font-style: italic;
+    color: #ffe100;
+}
+
+
+/* The Loading Animation (tomado de la web: https://javascript.plainenglish.io/building-an-infinite-scroll-with-vanilla-javascript-32810bae9a8c) */
+.loading{
+    width: auto;
+    height: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    margin: 0 10px;
+}
+.first{
+    animation: slide 2s  ease-in-out infinite ;
+    animation-delay: .1s;
+}
+.second{
+    animation: slide 2s ease-in-out infinite;
+    animation-delay: .5s;
+}
+.third{
+    animation: slide 2s ease-in-out infinite;
+    animation-delay: 1s;
+}
+@keyframes slide{
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}

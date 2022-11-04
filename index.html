@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen WDA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="container">
+        </div>
+    </header>
+    <main class="container-fluid">
+        <section class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 col-sm-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Giphy Explorer</h3>
+                            <div class="row g-3 my-2">
+                                <div class="col-auto">
+                                    <input type="text" class="form-control-plaintext" id="busqueda" value="" placeholder=" Ingresa tu búsqueda" required>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-dark mb-3" onclick="buscar()">BUSCAR</button>
+                                </div>
+                                <div class="col-auto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 my-3">
+                            <p><strong>BÚSQUEDAS RECIENTES</strong></p>
+                            <div id="contentBusquedasRecientes" class="m-2"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="container-elem"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-2">
+                        <div class="col-md-4 col-sm-12 justify-content-center">
+                            <div class="loading">
+                                <div class="ball first"></div>
+                                <div class="ball second"></div>
+                                <div class="ball third"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <div class="container">
+        </div>
+    </footer>
+    
+    <script src="src/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
